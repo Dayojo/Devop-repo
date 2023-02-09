@@ -1,0 +1,299 @@
+
+TUTORIAL git ---Git is a verson control system for tracking changes in computer file. Github is a source control panel. Git is a distributed source code management system( Everyone has a snapshot of the repo)
+Description
+GIT COMMANDS CHEAT SHEET
+ Set configuration values for your username and email
+-git config --global user.name YOUR NAME 
+-git config --global user.email YOUR EMAIL
+
+Set default branch to main 
+-git config --global init.default branch main
+
+Get help on a command
+git help COMMAND 
+-git COMMAND -h
+
+Initialize a new git repository 
+git init
+
+Start Begin configuraton from here
+
+
+
+
+Clone a repository 
+--git clone REPOSITORY URL                    
+
+You will see a folder on the desktop. Create a text file inside the folder (Testfile.txt)
+Copy anything inside the folder as well. could be image ( Microsoft image)
+ check the folder (Repo)to see the content
+
+--cd Folder name (Python)
+
+-git branch 
+
+--git status ( You shoud see untracked files)
+
+After we are done editing. We want it to track the file
+
+-git add FILE NAME( Test file.txt )
+
+
+Add a file to the staging area ( Staging is where your file sits until you are ready to commit them)
+-git add FILE
+
+Add all file changes to the staging area
+git add --all
+git add-A
+git add . (Track all files at once)
+
+
+Check the unstaged changes 
+git diff
+
+Save the changes you have made o  your own local  snapshot repo
+
+Commit the staged changes 
+-git commit -m "MESSAGE"  This is our first commit. 
+
+Reset staging area to the last commit
+git reset
+
+
+Check the state of the working directory and the staging area 
+-git status
+
+Remove file from staging area Back to my working files
+git restore --staged ("FILE NAME")
+
+
+Remove a file from the index and working directory
+git rm FILENAME
+
+Rename a file
+git mv ("OLD NAME") ("NEW NAME")
+
+List the commit history
+git log
+
+List all the local branches
+-git branch
+
+
+Create a new branch
+git branch BRANCH NAME
+
+Rename the current branch
+git branch -m NEW BRANCH NAME
+
+Delete a branch
+git branch -d BRANCH NAME
+
+
+Switch to another branch
+git switch BRANCH NAME
+
+Merge specified branch into the current branch
+git merge BRANCH NAME
+
+
+
+To push the commited 
+
+We need to push to the remote repo where everyone can see it. I have only worked on my local repo
+
+ -git push origin main
+
+or
+
+Push the committed changes to a remote directory 
+git push (REMOTE) (BRANCH) 
+
+
+
+(Bassically what we doing  to get a copy of a repo, add our content to it and return it back)
+
+
+From a remote repo
+
+Or Anohter way to do this is to create a folder on your desktop (Python2)
+On your terminal
+cd Python2
+
+Make the directory a git repository
+git init
+
+to show the .conf on linux
+
+ls 
+
+git remote
+
+Create a connection to a remote repository
+git remote add origin(NAME) (REPOSITORY URL)
+
+git remote
+
+git add .
+
+git commit -m "New Commit"
+
+
+Download the content from a remote repository
+git pull REMOTE
+
+
+
+
+
+Gitbash command
+
+git config
+git init
+git add
+git diff
+git commit
+git reset
+git status
+git merge
+git push
+git pull
+
+
+
+
+
+
+7/02/2023
+
+
+PERFORMING BASIC TASK ON GITBASH
+
+To show username and email
+git config --global --list
+git 
+Set configuration values for your username and email
+-git config --global user.name YOUR NAME 
+-git config --global user.email YOUR EMAIL
+
+
+ls
+cd
+pwd
+clear
+cd Desktop
+mkdir git-practice   (Make folder)
+cd git-practice
+pwd
+git init
+ls
+touch index.html  (Make file)
+touch script.js
+ls
+git status
+echo "practicing git">file.txt   (Make file)
+
+explorer
+ls
+git status
+git add file.txt
+git commit -m"adding my first file"
+git status
+
+
+remove other file
+rm script.js
+
+explorer
+       get to file and update and save
+
+git status
+git add file.txt
+git commit -m"manually updated the text"
+git log
+
+
+
+Uploading sorce code from remote machine to github.
+
+ls
+cd "copy the drectory of the file or text you want to upload and paste here"
+ls
+git init
+git remote add origin <github link>---command used to push source code to the remote repo( Github repo)
+git remote -v --- Used to check if we have access to push and pull
+
+ready to commit
+git add .--- to add all file in the diroctory
+
+git commit -m"second commit"
+git push origin master
+
+
+refresh your page
+
+Pushing another branch to the repo
+
+
+
+git push origin (New branch)remo
+
+
+
+
+
+
+Working on a project from github.
+ 
+First clone the master repo
+
+git clone repo URL
+
+
+get into the repository
+
+cd repo name
+
+check available branch- it should be master if there is only one repo
+
+git branch
+
+Developers or anyone dont work on the masters branch. They create another branch
+
+git branch hq
+
+git branch (check available branch again)
+
+change to hq branch
+
+git checkout hq or git switch hq
+
+make changes to file or edit file
+
+ls
+
+vi file name
+
+esq : wq to save
+
+git status
+
+git add .
+git commit -m"my update"   ---File has been updated and committed into local repo not the remote
+
+git status
+
+switch back to master branch and then merge the branches
+
+git checkout master
+
+merge local branch
+
+git merge hq
+
+if there is a conflict. Get into the edited file CAT FILE NAME and see conflict. This will now be discussed among the team to aggree on decision to resolve conflict
+
+git push origin master
+
+
+
