@@ -1,3 +1,15 @@
+AWS Password
+
+`QNt$uX*3tr4.;)%
+
+
+Git Password
+
+Today@30!
+
+Username--Dayojo
+
+
 
 TUTORIAL git ---Git is a verson control system for tracking changes in computer file. Github is a source control panel. Git is a distributed source code management system( Everyone has a snapshot of the repo)
 Description
