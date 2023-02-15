@@ -1,6 +1,8 @@
 AWS Password
 
-`QNt$uX*3tr4.;)%
+
+
+AWS PASSWORD - Today30!
 
 
 Git Password
@@ -17,6 +19,17 @@ GIT COMMANDS CHEAT SHEET
  Set configuration values for your username and email
 -git config --global user.name YOUR NAME 
 -git config --global user.email YOUR EMAIL
+
+
+Reset user password
+
+
+ls /home  ( Go to the root user)
+passwd Dayo( User name)
+Set new password
+
+
+
 
 Set default branch to main 
 -git config --global init.default branch main
